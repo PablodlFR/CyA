@@ -3,14 +3,19 @@
 
 #include <iostream>
 #include <string.h>
+#include <string>
+#include <vector>
 
 class Cad {
   public:
     Cad(std::string);
-   // ~Cad();
-
+  
     char* GetCad();
     int GetLength();
+    char* Invert();
+    std::string Prefix();
+    std::string Sufix();
+    std::string SubCad();
 
   private:
     char* cad_;

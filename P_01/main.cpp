@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
   fe.open(argv[1]);
   fo.open(argv[2]);
 
-  // Contamos el nº de líneas que tiene el fichero de entrada.
+    // Contamos el nº de líneas que tiene el fichero de entrada.
 
     while (!fe.eof()) {
       while(getline(fe, aux_cont)) {
@@ -43,14 +43,35 @@ int main(int argc, char *argv[]) {
      getline(fe, cad1);
 
   std::stringstream iss(cad1);
-  while(getline(iss, cad1, ' ')){ 
-    //std::cout << cad1 << std::endl;
-    cont++;
-    
-  }
+  while(getline(iss, cad1, ' '));   // Toma la última palabra de la línea, que corresponde a la cadena.
   
   Cad cad3(cad1);
-  std::cout << cad3.GetLength() << std::endl;
+
+  switch(atoi(argv[3])) {
+  case 1:
+    fo << cad3.GetLength() << std::endl;
+    break;
+
+  case 2:
+    fo << cad3.Invert() << std::endl;
+    break;
+
+  case 3:
+    fo << cad3.Prefix() << std::endl;
+    break;
+
+  case 4:
+    fo << cad3.Sufix() << std::endl;
+    break;
+  
+  case 5:
+    fo << cad3.SubCad() << std::endl;
+  
+  default:
+    break;
+  }
+  
+  
   
   }
  
@@ -59,10 +80,6 @@ int main(int argc, char *argv[]) {
   // fo << cad2;
   // std::cout << cad2 << std::endl;
 
-
-  if(cont > 1) {
-
-  }
 
   // while((fe >> cad1)) {
   //   std::cout << cad1 << std::endl;
