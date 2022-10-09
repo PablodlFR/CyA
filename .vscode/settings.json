@@ -31,6 +31,9 @@
     "vector": "cpp",
     "optional": "cpp",
     "tuple": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "deque": "cpp",
+    "set": "cpp",
+    "functional": "cpp"
   }
 }
