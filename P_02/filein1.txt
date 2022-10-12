@@ -1,0 +1,2 @@
+{ a b c } { a1 abc cab bbcc }
+{ 0 1 } { 0 1 }
