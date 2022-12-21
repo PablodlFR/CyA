@@ -1,0 +1,27 @@
+2
+a
+b
+9
+A
+B
+F
+G
+H
+I
+S
+X
+Y
+S
+12
+A -> a
+B -> b
+F -> AB
+G -> YX
+H -> XA
+I -> YB
+S -> BF
+S -> XG
+X -> AH
+X -> a
+Y -> BI
+Y -> b

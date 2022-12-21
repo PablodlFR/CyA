@@ -1,0 +1,35 @@
+3
+a
+b
+c
+9
+A
+B
+F
+G
+H
+I
+S
+X
+Y
+S
+19
+A -> a
+B -> b
+F -> BX
+G -> XB
+H -> BX
+I -> XH
+S -> AB
+S -> AF
+S -> AG
+S -> AI
+X -> AY
+X -> BY
+X -> a
+X -> b
+Y -> AY
+Y -> BY
+Y -> a
+Y -> b
+Y -> c
